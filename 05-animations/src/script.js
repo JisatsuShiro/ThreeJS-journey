@@ -19,7 +19,11 @@ const sizes = {
     width: 800,
     height: 600
 }
+const test = new THREE.SphereGeometry(1);
+const material2 = new THREE.MeshBasicMaterial({ color: 0xff0000, wireframe: true })
+const mesh2 = new THREE.Mesh(test, material2)
 
+scene.add(mesh2);
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
 camera.position.z = 3
