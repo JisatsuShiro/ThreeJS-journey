@@ -397,6 +397,14 @@ const tick = () =>
     ghost3.position.z = Math.sin(ghost3angle) * 6
     ghost3.position.y = (Math.sin(ghost3angle) * Math.sin(ghost3angle * 2.34) * Math.sin(ghost3angle * 3.45))
     
+    // Making doorlight blinking
+    let blinkSpeed = Math.random() -0.5 /2; // Vitesse de clignotement
+    let isBlinking = Math.random() >= 0.5;
+
+    if (isBlinking) {
+        // On alterne l'intensité entre 0 et 1 pour créer un effet de clignotement
+        doorLight.intensity = Math.abs(Math.sin(Date.now() * blinkSpeed));
+    }
     // Update controls
     controls.update()
 
