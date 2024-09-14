@@ -15,7 +15,8 @@ const scene = new THREE.Scene()
 // Loaders
 const textureLoader = new THREE.TextureLoader()
 const trooper = textureLoader.load(
-    './stormtrooper.jpg'
+    // './stormtrooper.jpg'
+    './paysage.webp'
 )
 
 /**
