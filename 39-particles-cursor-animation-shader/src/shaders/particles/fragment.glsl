@@ -6,9 +6,9 @@ void main()
     // float distanceToCenter = distance(uv, vec2(0.5));
     float distanceToCenter = length(uv - vec2(0.5));
 
-    if(distanceToCenter > 0.5) {
-        discard;
-    }
+    // if(distanceToCenter > 0.5) {
+    //     discard;
+    // }
     
     gl_FragColor = vec4(vColor, 1.0);
     #include <tonemapping_fragment>
